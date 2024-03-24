@@ -1,0 +1,7 @@
+<h1>IP Address Tracker</h1>
+<form #ipForm="ngForm" (ngSubmit)="onSubmit(ipForm)">
+        <div class="input-group mb-3">
+                <input type="text" id="ip_input" class="form-control" name="ip_input" [(ngModel)]="ip_input" placeholder="Search for any IP address or domain" aria-label="Search for any IP address or domain" aria-describedby="send-ip-or-domain">
+                <button class="btn btn-dark send-ip" type="submit" id="send-ip-or-domain"></button>
+        </div>
+</form>

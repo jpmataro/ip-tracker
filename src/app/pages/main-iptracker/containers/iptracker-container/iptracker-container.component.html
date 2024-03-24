@@ -1,0 +1,13 @@
+<section class="row">
+    <div class="d-flex flex-column align-items-center form-data-bg">
+        <div class="form-input">
+            <app-form-ip-tracker (ipInfo)="getIpInfo($event)"></app-form-ip-tracker>
+        </div>
+        <div class="data-show">
+            <app-ip-data-info [ipInfo]="ipAllData"></app-ip-data-info>
+        </div>
+    </div>
+    <div class="mx-0 px-0">
+        <app-map-marker></app-map-marker>
+    </div>
+</section>
