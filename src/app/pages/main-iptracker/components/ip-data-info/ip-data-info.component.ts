@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IpData } from '../../../../interfaces/ip-data';
 import { CommonModule } from '@angular/common';
 
@@ -12,9 +12,4 @@ import { CommonModule } from '@angular/common';
 export class IpDataInfoComponent {
   @Input() ipInfo!: IpData;
 
-  construnctor() {}
-
-  ngOnInit() {
-    console.log("info: ",this.ipInfo)
-  }
 }

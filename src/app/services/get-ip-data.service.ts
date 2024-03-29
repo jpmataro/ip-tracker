@@ -17,6 +17,9 @@ export class GetIpDataService {
         this.ipState.set(result);
         return this.ipState();
       })
+      .catch((error) => {
+        console.error("Error in fetch:", error);
+      })
   }
 
   

@@ -14,9 +14,17 @@ import { IpData } from '../../../../interfaces/ip-data';
 export class IptrackerContainerComponent {
 
     ipAllData!: IpData;
+    showAlert!: boolean;
+    errorMessages!: string;
 
     getIpInfo(ipInfoRecovered: IpData) {
       this.ipAllData = ipInfoRecovered;
+      this.showAlert = false;
+
+      if (this.ipAllData.code === 422) {
+        this.showAlert = true;
+        this.errorMessages = this.ipAllData.messages;
+      }
     }
 
 }

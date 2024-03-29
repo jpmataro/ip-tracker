@@ -4,6 +4,8 @@ export interface IpData {
     domains: string[];
     as: As;
     isp: string;
+    code: number;
+    messages: string;
 }
 
 export interface As {
